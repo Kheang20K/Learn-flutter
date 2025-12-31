@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,34 +17,6 @@ class MyApp extends StatelessWidget {
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
       home: HomePage(),
-    );
-  }
-}
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      drawer: Drawer(
-        child: Column(
-          children: [
-            UserAccountsDrawerHeader(
-              accountName: Text("Bob Android"),
-              accountEmail: Text("bob123@gmail.com")
-            )
-          ],
-        ),
-      ),
-      appBar: AppBar(
-        title: Text("Home"),
-        actions: [
-          IconButton(
-            onPressed: (){},
-            icon: Icon(Icons.settings)
-          )
-        ],
-      ),
     );
   }
 }
